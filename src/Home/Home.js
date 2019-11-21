@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
-import { Menu, MenuButton, MenuList, MenuItem, MenuGroup, MenuDivider, MenuOptionGroup, MenuItemOption, } from "@chakra-ui/core";
-import { Grid } from "@chakra-ui/core";
-import { Box } from "@chakra-ui/core";
+// import Navbar from "../NavBar/Navbar";
+import CenteredGrid from "../Grid/Grid";
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
 class Home extends Component {
 
     render() {
         return (
             <>
-                <Grid templateColumns="repeat(5, 1fr)" gap={6}>
-                    <Box w="100%" h="10" color="red" bg="blue.500" />
-                    <Box w="100%" h="10" bg="blue.500" />
-                    <Box w="100%" h="10" bg="blue.500" />
-                    <Box w="100%" h="10" bg="blue.500" />
-                    <Box w="100%" h="10" bg="blue.500" />
-                </Grid>
+                {/* <Navbar></Navbar> */}
+                <br></br><br></br>
+                <React.Fragment>
+                    <CssBaseline />
+                    <Container maxWidth="md">
+                        <Typography component="div" style={{ backgroundColor: '#336583', height: '100vh' }}> 
+                                                    <CenteredGrid></CenteredGrid>
+                        </Typography>
+                    </Container>
+                </React.Fragment>
             </>
         )
     }
