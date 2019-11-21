@@ -6,8 +6,9 @@ import Typography from '@material-ui/core/Typography';
 const images = [
     {
       url: require("../Pictures/github.jpg"),
-      title: '<a href="https://github.com/alexlo15>GitHub</a>',
+      title: 'GitHub',
       width: '25%',
+      address: "https://www.github.com/alexlo15",
     },
     {
       url: require("../Pictures/linkedin.jpg"),
@@ -108,6 +109,7 @@ export default function SocialButts() {
       {images.map(image => (
         <ButtonBase  
           focusRipple
+        //   component={image.address}
           key={image.title}
           className={classes.image}
           focusVisibleClassName={classes.focusVisible}
@@ -129,7 +131,7 @@ export default function SocialButts() {
               color="inherit"
               className={classes.imageTitle}
             >
-              {image.title}
+             {image.title}
               <span className={classes.imageMarked} />
             </Typography>
           </span>

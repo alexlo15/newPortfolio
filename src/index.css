@@ -6,15 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-/* #contactLinks {
-  display: none;
-} */
+/* Social/Contact buttons VVV */
 .gitPic{
   background-image: url("./Pictures/github.jpg");
   background-size: cover;
@@ -36,6 +33,17 @@ code {
   background-position: center;
 }
 
-/* #bioText{
-  float: right;
-} */
+/* Parallax effect VVV */
+.parallax {
+  /* The image used */
+  background-image: url("./Pictures/nyc.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

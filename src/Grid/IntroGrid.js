@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
 
 
 
-export default function CenteredGrid() {
+export default function IntroGrid() {
     const classes = useStyles();
 
     return (
