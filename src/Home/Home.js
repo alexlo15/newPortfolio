@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./Home.css";
 import Navbar from "../Components/Navbar/Navbar";
 import RandomFact from "../Components/RandomFact";
+import SkillOrbit from "../Components/SkillsOrbit/Orbit";
 
 class Home extends Component {
 
@@ -9,7 +10,9 @@ class Home extends Component {
         return (
             <>
                 <Navbar />
-                <br></br>
+
+                <div className="parallax"></div>
+
                 <div className="row">
                     <div className="col=12 col-sm-12 col-lg-6">
                         <div className="row">
@@ -32,7 +35,7 @@ class Home extends Component {
                                 <div id="randomFactArea">
                                     <div id="DYK"><h3>Did you know?</h3></div>
                                     <br></br>
-                                    <div id="fact"><RandomFact /></div>
+                                    {/* <div id="fact"><RandomFact /></div> */}
                                     <br></br>
                                     <h3 id="afterThought">...I certainly didn't!</h3>
                                 </div>
@@ -64,8 +67,8 @@ class Home extends Component {
 
                 {/* ///////////////////////////////////////// */}
                 <div className="row">
-                    <div className="col-12 col-sm-12 col-lg-4"></div>
-                    <div className="col-12 col-sm-12 col-lg-12 bioParagraph">
+                    <div className="col-12 col-sm-12 col-lg-2"></div>
+                    <div className="col-12 col-sm-12 col-lg-8 bioParagraph">
                         <h3>Thank you for visiting my Portfolio page!
                        I'm Alex Lo, a Full Stack Web Developer,
                        looking to take my career to the next level.
@@ -73,7 +76,14 @@ class Home extends Component {
                        challenging myself to balance simplicity and
                        creativity. Scroll down to see some of my work.</h3>
                     </div>
-                    <div className="col-12 col-sm-12 col-lg-12"></div>
+                    <div className="col-12 col-sm-12 col-lg-2"></div>
+                </div>
+                <div className="row">
+                    <div className="col-12 col-sm-12 col-lg-4"></div>
+                    <div className="col-12 col-sm-12 col-lg-4 bioParagraph">
+                        <SkillOrbit />
+                    </div>
+                    <div className="col-12 col-sm-12 col-lg-4"></div>
                 </div>
                 {/* ///////////////////////////////////////// */}
 

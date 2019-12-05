@@ -1,0 +1,84 @@
+.skillPlanetMain {
+    position: relative;
+    z-index: 2;
+    background-color: azure;
+    width: 10em; height: 10em;
+    box-shadow: 0 0 1em darkslategray, inset 0 0 7em darkslategray;
+    text-align: center;
+    border-radius: 100px;
+}
+
+/* .css {
+    z-index: 2;
+    position: relative;
+    background-color: blue;
+    width: 1em; height: 1em;
+} */
+
+/* .html{
+    z-index: 2;
+    position: relative;
+    width: 2em; height: 1em;
+} */
+/*****INDIVIDUALS ABOVE********************************/
+/* PLANET SIZES BELOW */
+.planet{
+    width: 60px;
+    height: 75px;
+}
+.reactplanet{
+    width: 100px;
+    height: 100px;
+}
+.squareplanet{
+    width: 75px;
+    height: 75px;
+}
+
+/* How they rotate below */
+.system-sun {
+    margin: 0 auto;
+    position: relative;
+    width: 10em; height: 10em;
+}
+
+.system-css {
+    z-index: 3;
+    position: absolute;
+    top: 1em; left: -10em;
+    width: 2em; height: 1em;
+    animation: earth-orbit 8s ease-in-out infinite;
+}
+.system-html {
+    z-index: 3;
+    position: absolute;
+    top: 2.5em; left: -9em;
+    width: 1em; height: 1em;
+    animation: earth-orbit 6s ease-in-out infinite;
+}
+.system-js {
+    z-index: 3;
+    position: absolute;
+    top: 3.5em; left: -5em;
+    width: 3em; height: 1em;
+    animation: earth-orbit 7s ease-in-out infinite;
+}
+.system-react {
+    z-index: 3;
+    position: absolute;
+    top: 5em; left: -8em;
+    width: 2em; height: 2em;
+    animation: earth-orbit 9s ease-in-out infinite;
+}
+.system-node {
+    z-index: 3;
+    position: absolute;
+    top: 6em; left: -10em;
+    width: 2em; height: 2em;
+    animation: earth-orbit 10s ease-in-out infinite;
+}
+@keyframes earth-orbit {
+      0% { transform: translateX(0); }
+     50% { transform: translateX(30em); z-index: 3; }
+    100% { transform: translateX(0); z-index: 1; }
+}
