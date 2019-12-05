@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Grid } from "@chakra-ui/core";
-import { Box } from "@chakra-ui/core";
 import "./Home.css";
-import Navbar from "../Components/Navbar";
-// impor
+import Navbar from "../Components/Navbar/Navbar";
+import RandomFact from "../Components/RandomFact";
 
 class Home extends Component {
 
@@ -15,24 +13,40 @@ class Home extends Component {
                 <div className="row">
                     <div className="col=12 col-sm-12 col-lg-6">
                         <div className="row">
-                            <div className="col-12 col-sm-12 col-lg-3">1</div>
+                            <div className="col-12 col-sm-12 col-lg-3"></div>
                             <div className="col-12 col-sm-12 col-lg-6"><h1>Alex Lo</h1></div>
                             <div className="col-12 col-sm-12 col-lg-3"></div>
                         </div>
                         <div className="row">
-                            <div className="col-12 col-sm-12 col-lg-2">1</div>
+                            <div className="col-12 col-sm-12 col-lg-2"></div>
                             <div className="col-12 col-sm-12 col-lg-8">
                                 <h2>Full-Stack</h2>
                                 <h2>Web Developer</h2>
                             </div>
-                            <div className="col-12 col-sm-12 col-lg-2">3</div>
+                            <div className="col-12 col-sm-12 col-lg-2"></div>
+                        </div>
+                        <br></br>
+                        <div className="row">
+                            <div className="col-12 col-sm-12 col-lg-2"></div>
+                            <div className="col-12 col-sm-12 col-lg-8">
+                                <div id="randomFactArea">
+                                    <div id="DYK"><h3>Did you know?</h3></div>
+                                    <br></br>
+                                    <div id="fact"><RandomFact /></div>
+                                    <br></br>
+                                    <h3 id="afterThought">...I certainly didn't!</h3>
+                                </div>
+                            </div>
+                            <div className="col-12 col-sm-12 col-lg-2"></div>
                         </div>
                     </div>
                     <div className="col=12 col-sm-12 col-lg-6">
                         <div className="picContainer">
                             <img id="bioPic" alt="my ugly mug" src={require("../Images/me.jpg")} />
                         </div>
+                        <br></br>
                     </div>
+
                 </div>
 
 
@@ -44,6 +58,23 @@ class Home extends Component {
                     challenging myself to balance simplicity and
                     creativity. Scroll down to see some of my work.
                              </p> */}
+                {/* ///////////////////////////////////////// */}
+
+                <div className="parallax"></div>
+
+                {/* ///////////////////////////////////////// */}
+                <div className="row">
+                    <div className="col-12 col-sm-12 col-lg-4"></div>
+                    <div className="col-12 col-sm-12 col-lg-12 bioParagraph">
+                        <h3>Thank you for visiting my Portfolio page!
+                       I'm Alex Lo, a Full Stack Web Developer,
+                       looking to take my career to the next level.
+                       I love making crisp clean web pages while
+                       challenging myself to balance simplicity and
+                       creativity. Scroll down to see some of my work.</h3>
+                    </div>
+                    <div className="col-12 col-sm-12 col-lg-12"></div>
+                </div>
                 {/* ///////////////////////////////////////// */}
 
                 <div className="parallax"></div>
@@ -63,7 +94,7 @@ class Home extends Component {
                                 <img className="pic" src={require("../Images/notify.jpg")} />
                             </a>
                         </p>
-                        <div class="overlay">
+                        <div className="overlay">
                             <p>
                                 <a href="https://alexlo15.github.io/Project1/" className="text" target="_blank">
                                     Notify (Deployed)
@@ -88,7 +119,7 @@ class Home extends Component {
                                 <img className="pic" src={require("../Images/guildguess.JPG")} />
                             </a>
                         </p>
-                        <div class="overlay">
+                        <div className="overlay">
                             <p>
                                 <a href="https://alexlo15.github.io/guildguessreact/" className="text" target="_blank">
                                     Guild Guess (Deployed)
@@ -113,7 +144,7 @@ class Home extends Component {
                                 <img className="pic" src={require("../Images/wedh.JPG")} />
                             </a>
                         </p>
-                        <div class="overlay">
+                        <div className="overlay">
                             <p>
                                 <a href="https://we-dh.herokuapp.com/" className="text" target="_blank">
                                     W-EDH (Deployed)
@@ -140,7 +171,7 @@ class Home extends Component {
                                 <img className="pic" src={require("../Images/nbagif.JPG")} />
                             </a>
                         </p>
-                        <div class="overlay">
+                        <div className="overlay">
                             <p>
                                 <a href="https://alexlo15.github.io/nevergifup/" className="text" target="_blank">
                                     NBA GIF Search (Deployed)
@@ -165,7 +196,7 @@ class Home extends Component {
                                 <img className="pic" src={require("../Images/trivia.JPG")} />
                             </a>
                         </p>
-                        <div class="overlay">
+                        <div className="overlay">
                             <p>
                                 <a href="https://ruproject2.herokuapp.com/" className="text" target="_blank">
                                     Knode Your Code proj 2 version (Deployed)
@@ -190,7 +221,7 @@ class Home extends Component {
                                 <img className="pic" src={require("../Images/KYC.JPG")} />
                             </a>
                         </p>
-                        <div class="overlay">
+                        <div className="overlay">
                             <p>
                                 <a href="https://knodeyourcode-react.herokuapp.com/" className="text" target="_blank">
                                     Knode Your Code final project (Deployed)

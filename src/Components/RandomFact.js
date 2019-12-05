@@ -10,8 +10,9 @@ class RandomFact extends Component {
         let apiCall = new XMLHttpRequest();
         apiCall.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
-                document.getElementById("fact").innerHTML =
-                    this.responseText;
+
+                let shortRes = this.responseText.substr(1, this.responseText.length - 69)
+                document.getElementById("fact").innerHTML = shortRes
             }
         }
 
@@ -19,8 +20,8 @@ class RandomFact extends Component {
         apiCall.send();
     };
 
-    render(){
-        return(
+    render() {
+        return (
             <div></div>
         );
     }

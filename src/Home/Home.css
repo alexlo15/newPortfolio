@@ -1,3 +1,8 @@
+body{
+    background-color: darkslategray;
+}
+
+/* starts from top of the page, intro and bio */
 .bioParagraph{
     border-radius: 4px;
     color: azure;
@@ -7,12 +12,34 @@
   width: 50%;
   height: 50%;
   position: relative;
+  border-radius: 30px;
 
 }
+
 .picContainer{
   align-items: center;
 }
 
+h1{
+  font-size: 95px;
+  text-align: center;
+}
+
+h2{
+  font-size: 65px;
+  text-align: center;
+}
+
+#randomFactArea{
+  color: azure;
+  border: solid 2px azure;
+  border-radius: 4px;
+  padding: 10px;
+}
+#afterThought{
+  margin-left: 40%;
+}
+/*******************************************************************/
 .endParagraph{
   margin: 3px;
   border-radius: 4px;
@@ -22,18 +49,7 @@
   align-content: center;
 }
 
-body{
-    background-color: darkslategray;
-}
 
-h1{
-  font-size: 95px;
-  text-align: center;
-}
-h2{
-  font-size: 65px;
-  text-align: center;
-}
 
 
 

@@ -6,9 +6,9 @@ class Navbar extends Component {
         return (
 
             <>
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#">Alex Lo</a>
-                    <div class="navbar-right">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a className="navbar-brand" href="/">Alex Lo</a>
+                    <div className="navbar-right">
                         <a href="https://github.com/alexlo15" target="_blank">GitHub</a>
                         <a href="https://linkedin.com/in/alexlo15" target="_blank">LinkedIn</a>
                         <a href="https://alexlo15.github.io" target="_blank">Portfolio</a>
