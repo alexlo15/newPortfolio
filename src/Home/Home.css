@@ -1,4 +1,4 @@
-body{
+.body{
     background-color: darkslategray;
 }
 
@@ -41,7 +41,16 @@ h2{
 }
 /*******************************************************************/
 
-
+.techParagraph{
+  color: azure;
+  text-align: center;
+}
+li{
+  display: block;
+  font-size: 20px;
+  color: azure;
+}
+/* /////////////////////////////////////////////////////////// */
 .endParagraph{
   margin: 3px;
   border-radius: 4px;
@@ -66,7 +75,7 @@ h2{
   }
 .pic {
   object-fit: cover;
-  width: 100vw;
+  width: 95vw;
   height: 20vh;
 }
 

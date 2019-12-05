@@ -28,6 +28,19 @@ class SkillOrbit extends Component {
                     <div className="system-js">
                         <img className="squareplanet" src={require("../../Images/javascript.png")} />
                     </div>
+
+                    <div className="system-mongo">
+                        <img className="squareplanet" src={require("../../Images/mongo.png")} />
+                    </div>
+
+                    <div className="system-sql">
+                        <img className="reactplanet" src={require("../../Images/mysql.png")} />
+                    </div>
+                    
+                    <div className="system-angular">
+                        <img className="reactplanet" src={require("../../Images/angular.png")} />
+                    </div>
+
                     {/* the sun the rotate around */}
                     <div class="skillPlanetMain">
                         <h3 id="skillText"><strong>Skills</strong></h3>

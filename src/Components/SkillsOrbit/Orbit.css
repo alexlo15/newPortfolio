@@ -77,6 +77,27 @@
     width: 2em; height: 2em;
     animation: earth-orbit 10s ease-in-out infinite;
 }
+.system-mongo {
+    z-index: 3;
+    position: absolute;
+    top: 0.5em; left: -5em;
+    width: 2em; height: 2em;
+    animation: earth-orbit 7.5s ease-in-out infinite;
+}
+.system-sql {
+    z-index: 3;
+    position: absolute;
+    top: 6.25em; left: -4.5em;
+    width: 1em; height: 1em;
+    animation: earth-orbit 11s ease-in-out infinite;
+}
+.system-angular {
+    z-index: 3;
+    position: absolute;
+    top: 3.5em; left: -9em;
+    width: 2em; height: 2em;
+    animation: earth-orbit 10.5s ease-in-out infinite;
+}
 @keyframes earth-orbit {
       0% { transform: translateX(0); }
      50% { transform: translateX(30em); z-index: 3; }

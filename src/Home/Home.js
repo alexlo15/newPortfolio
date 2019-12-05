@@ -8,7 +8,7 @@ class Home extends Component {
 
     render() {
         return (
-            <>
+            <div className="body">
                 <Navbar />
 
                 <div className="parallax"></div>
@@ -69,21 +69,39 @@ class Home extends Component {
                 <div className="row">
                     <div className="col-12 col-sm-12 col-lg-2"></div>
                     <div className="col-12 col-sm-12 col-lg-8 bioParagraph">
-                        <h3>Thank you for visiting my Portfolio page!
-                       I'm Alex Lo, a Full Stack Web Developer,
-                       looking to take my career to the next level.
-                       I love making crisp clean web pages while
-                       challenging myself to balance simplicity and
-                       creativity. Scroll down to see some of my work.</h3>
+                        <h3>
+                            <p>Thank you for visiting my Portfolio page!</p>
+                            <p> I'm Alex, a Full Stack Web Developer, looking to take my career to the next level.</p>
+                            <p>I love making crisp clean web pages while challenging myself to balance simplicity and creativity.</p>
+                            <p>Scroll down to see some of my work.</p>
+                        </h3>
                     </div>
                     <div className="col-12 col-sm-12 col-lg-2"></div>
                 </div>
+                <br></br><br></br>
                 <div className="row">
                     <div className="col-12 col-sm-12 col-lg-4"></div>
                     <div className="col-12 col-sm-12 col-lg-4 bioParagraph">
                         <SkillOrbit />
                     </div>
                     <div className="col-12 col-sm-12 col-lg-4"></div>
+                </div>
+                <br></br><br></br>
+                <div className="row">
+                    <div className="col-12 col-sm-12 col-lg-6 techParagraph">
+                        <h3>&nbsp; Front-end Technologies</h3>
+                        <li><strong>React.JS</strong></li>
+                        <li><strong>Angular.JS</strong></li>
+                        <li><strong>HTML5/CSS3</strong></li>
+                        <li><strong>JavaScript</strong></li>
+                    </div>
+                    <div className="col-12 col-sm-12 col-lg-6 techParagraph">
+                        <h3>&nbsp; Back-end Technologies</h3>
+                        <li><strong>Node.JS</strong></li>
+                        <li><strong>Express</strong></li>
+                        <li><strong>MongoDB</strong></li>
+                        <li><strong>MySQL</strong></li>
+                    </div>
                 </div>
                 {/* ///////////////////////////////////////// */}
 
@@ -262,7 +280,7 @@ class Home extends Component {
                     </div>
                 </div>
 
-            </>
+            </div>
         )
     }
 
