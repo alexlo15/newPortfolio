@@ -6,8 +6,44 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Social/Contact buttons VVV */
+.gitPic{
+  background-image: url("./Pictures/github.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.linkPic{
+  background-image: url("./Pictures/linkedin.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.emailPic{
+  background-image: url("./Pictures/emailPic.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.numPic{
+  background-image: url("./Pictures/numPic.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Parallax effect VVV */
+.parallax {
+  /* The image used */
+  background-image: url("./Pictures/nyc.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
