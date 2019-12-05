@@ -1,5 +1,6 @@
 .body{
     background-color: darkslategray;
+    color: azure;
 }
 
 /* starts from top of the page, intro and bio */
@@ -13,27 +14,27 @@
   height: 50%;
   position: relative;
   border-radius: 30px;
-
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.267);
 }
-
+#titleBorder{
+  border-top: 2px solid azure;
+}
 .picContainer{
   align-items: center;
 }
-
 h1{
   font-size: 95px;
   text-align: center;
 }
-
 h2{
   font-size: 65px;
   text-align: center;
 }
-
 #randomFactArea{
   color: azure;
-  border: solid 2px azure;
-  border-radius: 4px;
+  border-top: solid 2px azure;
+  border-bottom: solid 2px azure;
+  border-radius: 15px;
   padding: 10px;
 }
 #afterThought{
@@ -61,9 +62,6 @@ li{
 }
 
 
-
-
-
   /*size and shaping of portfolio pics and overlay text */
   .portPics{
     display: flex;
@@ -71,13 +69,12 @@ li{
     align-items: center;
     overflow: hidden;
     margin-bottom: 20px;
- 
   }
-.pic {
+  .pic {
   object-fit: cover;
   width: 95vw;
   height: 20vh;
-}
+  }
 
 .overlay {
   position: absolute;

@@ -3,6 +3,7 @@ import "./Home.css";
 import Navbar from "../Components/Navbar/Navbar";
 import RandomFact from "../Components/RandomFact";
 import SkillOrbit from "../Components/SkillsOrbit/Orbit";
+import Ticker from "../Components/Ticker/Ticker";
 
 class Home extends Component {
 
@@ -11,7 +12,6 @@ class Home extends Component {
             <div className="body">
                 <Navbar />
 
-                <div className="parallax"></div>
 
                 <div className="row">
                     <div className="col=12 col-sm-12 col-lg-6">
@@ -20,11 +20,16 @@ class Home extends Component {
                             <div className="col-12 col-sm-12 col-lg-6"><h1>Alex Lo</h1></div>
                             <div className="col-12 col-sm-12 col-lg-3"></div>
                         </div>
+                        <br></br>
                         <div className="row">
                             <div className="col-12 col-sm-12 col-lg-2"></div>
                             <div className="col-12 col-sm-12 col-lg-8">
-                                <h2>Full-Stack</h2>
+                                <br></br>
+                                <h2 id="titleBorder">Full-Stack</h2>
                                 <h2>Web Developer</h2>
+                                <br></br>
+                                <br></br>
+                                <br></br>
                             </div>
                             <div className="col-12 col-sm-12 col-lg-2"></div>
                         </div>
@@ -45,39 +50,18 @@ class Home extends Component {
                     </div>
                     <div className="col=12 col-sm-12 col-lg-6">
                         <div className="picContainer">
+                            <br></br>
                             <img id="bioPic" alt="my ugly mug" src={require("../Images/me.jpg")} />
                         </div>
                         <br></br>
                     </div>
-
                 </div>
-
-
-                {/* <p>
-                    Thank you for visiting my Portfolio page!
-                    I'm Alex Lo, a Full Stack Web Developer,
-                    looking to take my career to the next level.
-                    I love making crisp clean web pages while
-                    challenging myself to balance simplicity and
-                    creativity. Scroll down to see some of my work.
-                             </p> */}
+                <Ticker />
                 {/* ///////////////////////////////////////// */}
 
                 <div className="parallax"></div>
 
                 {/* ///////////////////////////////////////// */}
-                <div className="row">
-                    <div className="col-12 col-sm-12 col-lg-2"></div>
-                    <div className="col-12 col-sm-12 col-lg-8 bioParagraph">
-                        <h3>
-                            <p>Thank you for visiting my Portfolio page!</p>
-                            <p> I'm Alex, a Full Stack Web Developer, looking to take my career to the next level.</p>
-                            <p>I love making crisp clean web pages while challenging myself to balance simplicity and creativity.</p>
-                            <p>Scroll down to see some of my work.</p>
-                        </h3>
-                    </div>
-                    <div className="col-12 col-sm-12 col-lg-2"></div>
-                </div>
                 <br></br><br></br>
                 <div className="row">
                     <div className="col-12 col-sm-12 col-lg-4"></div>
