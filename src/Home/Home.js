@@ -3,6 +3,7 @@ import { Grid } from "@chakra-ui/core";
 import { Box } from "@chakra-ui/core";
 import "./Home.css";
 import Navbar from "../Components/Navbar";
+// impor
 
 class Home extends Component {
 
@@ -11,54 +12,48 @@ class Home extends Component {
             <>
                 <Navbar />
                 <br></br>
-                <Grid templateColumns="repeat(3, 1fr)" gap={4}>
-                    <Box w="100%" h="10" color="primary" bg="blue.500">
-
-                        <div className="bioParagraph">
-                            Thank you for visiting my Portfolio page!
-                             I'm Alex Lo, a Full Stack Web Developer,
-                            looking to take my career to the next level.
-                             I love making crisp clean web pages while
-                             challenging myself to balance simplicity and
-                             creativity. Scroll down to see some of my work.
-                      </div>
-                    </Box>
-                    <Box w="100%" h="10" bg="blue.500">
-                        <div className="bioParagraph">
-                            <p>Skills:</p>
-                            <p>JavaScript, HTML/CSS, React, MongoDB, SQL, MERN Stack</p>
+                <div className="row">
+                    <div className="col=12 col-sm-12 col-lg-6">
+                        <div className="row">
+                            <div className="col-12 col-sm-12 col-lg-3">1</div>
+                            <div className="col-12 col-sm-12 col-lg-6"><h1>Alex Lo</h1></div>
+                            <div className="col-12 col-sm-12 col-lg-3"></div>
                         </div>
-                    </Box>
-                    <Box w="100%" h="10" bg="blue.500" />
-
-                </Grid>
-                <Grid templateColumns="repeat(3, 1fr)" gap={4}>
-                    <Box w="100%" h="10" bg="blue.500">
-                        <div className="bioParagraph">
-                            Pic
-                            {/* <img className="bioPic" alt="my ugly mug" src={require("../Images/me.jpg")} /> */}
+                        <div className="row">
+                            <div className="col-12 col-sm-12 col-lg-2">1</div>
+                            <div className="col-12 col-sm-12 col-lg-8">
+                                <h2>Full-Stack</h2>
+                                <h2>Web Developer</h2>
+                            </div>
+                            <div className="col-12 col-sm-12 col-lg-2">3</div>
                         </div>
-                    </Box>
-                    <Box w="100%" h="10" bg="blue.500" />
-                    <Box w="100%" h="10" color="red" bg="blue.500">Hello</Box>
-                </Grid>
+                    </div>
+                    <div className="col=12 col-sm-12 col-lg-6">
+                        <div className="picContainer">
+                            <img id="bioPic" alt="my ugly mug" src={require("../Images/me.jpg")} />
+                        </div>
+                    </div>
+                </div>
 
+
+                {/* <p>
+                    Thank you for visiting my Portfolio page!
+                    I'm Alex Lo, a Full Stack Web Developer,
+                    looking to take my career to the next level.
+                    I love making crisp clean web pages while
+                    challenging myself to balance simplicity and
+                    creativity. Scroll down to see some of my work.
+                             </p> */}
                 {/* ///////////////////////////////////////// */}
 
                 <div className="parallax"></div>
 
                 {/* ///////////////////////////////////////// */}
-                <Grid templateColumns="repeat(3, 1fr)" gap={4}>
-                    <Box w="100%" h="10" bg="blue.500">
-
-                    </Box>
-                    <Box w="100%" h="10" bg="blue.500">
-                        <div className="bioParagraph">
-                            <h2>Sites and Applications:</h2>
-                        </div>
-                    </Box>
-                    <Box w="100%" h="10" color="red" bg="blue.500"></Box>
-                </Grid>
+                <div className="row">
+                    <div className="col-12 col-sm-12 col-lg-2"></div>
+                    <div className="col-12 col-sm-12 col-lg-8 bioParagraph"><h2>Sites and Applications:</h2></div>
+                    <div className="col-12 col-sm-12 col-lg-2"></div>
+                </div>
 
                 {/* start of portfolio  */}
                 <div className="row">
@@ -203,7 +198,7 @@ class Home extends Component {
                             </p>
                             <p>
                                 <a href="https://github.com/alexlo15/knodeyacode" className="description" target="_blank">
-                                The final project version of "KYC", as a MERN stack application
+                                    The final project version of "KYC", as a MERN stack application
                             </a>
                             </p>
                             <p>
@@ -215,6 +210,17 @@ class Home extends Component {
                     </div>
                     {/* End of portfolio piece */}
                 </div>
+
+                <div className="parallax"></div>
+
+                <div className="row">
+                    <div className="col-lg-4"></div>
+                    <div className="col-12 col-sm-12 col-lg-4 endParagraph">
+                        Thanks for making it to the end!
+                        Feel free to reach me at any of my links in the NavBar or below.
+                    </div>
+                </div>
+
             </>
         )
     }

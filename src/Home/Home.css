@@ -1,26 +1,39 @@
 .bioParagraph{
-    margin: 3px;
     border-radius: 4px;
-    border: solid azure 1px;
-    background-color: azure;
+    color: azure;
     padding: 10px;
-};
+}
+#bioPic{
+  width: 50%;
+  height: 50%;
+  position: relative;
 
-.bioPic{
-    width: 20%;
-    height: 20%;
+}
+.picContainer{
+  align-items: center;
+}
 
+.endParagraph{
+  margin: 3px;
+  border-radius: 4px;
+  border: solid azure 1px;
+  background-color: azure;
+  padding: 10px;
+  align-content: center;
 }
 
 body{
     background-color: darkslategray;
-    color: darkslategray;
 }
 
+h1{
+  font-size: 95px;
+  text-align: center;
+}
 h2{
-    text-align: center;
+  font-size: 65px;
+  text-align: center;
 }
-
 
 
 
@@ -30,6 +43,7 @@ h2{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-bottom: 20px;
  
   }
 .pic {
