@@ -1,5 +1,8 @@
 .navbutts{
-    
     float: right;
-    color: azure;
+    width: 5vw;
+    height: 5vh;
+    object-fit: cover;
+    overflow: hidden;
 }
+

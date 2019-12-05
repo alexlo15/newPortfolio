@@ -35,7 +35,7 @@ class Home extends Component {
                                 <div id="randomFactArea">
                                     <div id="DYK"><h3>Did you know?</h3></div>
                                     <br></br>
-                                    {/* <div id="fact"><RandomFact /></div> */}
+                                    <div id="fact"><RandomFact /></div>
                                     <br></br>
                                     <h3 id="afterThought">...I certainly didn't!</h3>
                                 </div>

@@ -6,12 +6,12 @@ class Navbar extends Component {
         return (
 
             <>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav className="navbar nav-sticky navbar-expand-lg navbar-dark bg-dark">
                     <a className="navbar-brand" href="/">Alex Lo</a>
                     <div className="navbar-right">
-                        <a href="https://github.com/alexlo15" target="_blank">GitHub</a>
-                        <a href="https://linkedin.com/in/alexlo15" target="_blank">LinkedIn</a>
-                        <a href="https://alexlo15.github.io" target="_blank">Portfolio</a>
+                        <a href="https://github.com/alexlo15" target="_blank"><img className="navbutts" src={require("../../Images/Pictures/github.jpg")}/></a>
+                        <a href="https://linkedin.com/in/alexlo15" target="_blank"><img className="navbutts" src={require("../../Images/Pictures/linkedin.jpg")}/></a>
+                        <a href="https://alexlo15.github.io" target="_blank"><img className="navbutts" src={require("../../Images/portfolio.png")}/></a>
                     </div>
 
                 </nav>
