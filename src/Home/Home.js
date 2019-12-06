@@ -87,6 +87,10 @@ class Home extends Component {
                         <li><strong>MySQL</strong></li>
                     </div>
                 </div>
+                <br></br>
+                <br></br>
+
+
                 {/* ///////////////////////////////////////// */}
 
                 <div className="parallax"></div>
