@@ -4,17 +4,17 @@ import Navbar from "../Components/Navbar/Navbar";
 import RandomFact from "../Components/RandomFact";
 import SkillOrbit from "../Components/SkillsOrbit/Orbit";
 import Ticker from "../Components/Ticker/Ticker";
+import RandomJoke from '../Components/RandomJoke';
 
 class Home extends Component {
 
     render() {
         return (
             <div className="body">
-                <Navbar/>
-
-
+                <Navbar />
+                <div className="row"><br></br><br></br></div>
                 <div className="row">
-                    <div className="col=12 col-sm-12 col-lg-6">
+                    <div className="col=12 col-sm-12 col-lg-4">
                         <div className="row">
                             <div className="col-12 col-sm-12 col-lg-3"></div>
                             <div className="col-12 col-sm-12 col-lg-6"><h1>Alex Lo</h1></div>
@@ -34,27 +34,31 @@ class Home extends Component {
                             <div className="col-12 col-sm-12 col-lg-2"></div>
                         </div>
                         <br></br>
-                        <div className="row">
-                            <div className="col-12 col-sm-12 col-lg-2"></div>
-                            <div className="col-12 col-sm-12 col-lg-8">
-                                <div id="squigglyborder">
-                                    <div id="DYK"><h3>Did you know?</h3></div>
-                                    <br></br>
-                                    <div id="fact"><RandomFact /></div>
-                                    <br></br>
-                                    <h3 id="afterThought">...I certainly didn't!</h3>
-                                </div>
-                            </div>
-                            <div className="col-12 col-sm-12 col-lg-2"></div>
-                        </div>
                     </div>
-                    <div className="col=12 col-sm-12 col-lg-6">
-                        <div className="picContainer">
-                            <br></br>
-                            <img id="bioPic" alt="my ugly mug" src={require("../Images/me.jpg")} />
-                        </div>
+                    <div className="col=12 col-sm-12 col-lg-4 picContainer">
+                        <br></br>
+                        <img id="bioPic" alt="my ugly mug" src={require("../Images/me.jpg")} />
                         <br></br>
                     </div>
+                    <div className="col=12 col-sm-12 col-lg-3">
+                        <br></br>
+                        <div id="squigglyborder">
+                            <div id="DYK"><h3>Did you know?</h3></div>
+                            <br></br>
+                            <div id="fact"><RandomFact /></div>
+                            <br></br>
+                            <h3 id="afterThought">...I certainly didn't!</h3>
+                        </div>
+                        <br></br>
+                        <div id="squigglyborder">
+                            <div id="DYK"><h3>Heard this one??</h3></div>
+                            <br></br>
+                            <div id="joke"><RandomJoke /></div>
+                            <br></br>
+                            <h3 id="afterThought">...LOL!</h3>
+                        </div>
+                    </div>
+                    <div className="col-lg-1"></div>
                 </div>
                 <Ticker />
                 {/* ///////////////////////////////////////// */}

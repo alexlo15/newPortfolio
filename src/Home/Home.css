@@ -1,58 +1,84 @@
-.body{
-    background-color: darkslategray;
-    color: azure;
+.body {
+  width: 100vw;
 }
 
 /* starts from top of the page, intro and bio */
-.bioParagraph{
-    border-radius: 4px;
-    color: azure;
-    padding: 10px;
+
+.bioParagraph {
+  border-radius: 4px;
+  color: azure;
+  padding: 10px;
 }
-#bioPic{
-  width: 50%;
-  height: 50%;
+
+#bioPic {
+  width: 30vw;
+  height: 60vh;
   position: relative;
   border-radius: 30px;
   box-shadow: 10px 10px rgba(0, 0, 0, 0.267);
+  object-fit: cover;
 }
-#titleBorder{
+
+@media (min-width:961px) {
+  #bioPic {
+    width: 30vw;
+    height: 60vh;
+  }
+} 
+@media (max-width:960px) {
+  #bioPic {
+    height: 90vh;
+    width: 60vw;
+  }
+}
+
+//nothing with screen size bigger than 960px
+#titleBorder {
   border-top: 2px solid azure;
 }
-.picContainer{
+
+.picContainer {
   align-items: center;
 }
-h1{
+
+h1 {
   font-size: 95px;
   text-align: center;
 }
-h2{
+
+h2 {
   font-size: 65px;
   text-align: center;
 }
-#squigglyborder{
+
+#squigglyborder {
   color: azure;
   border-top: solid 2px azure;
   border-bottom: solid 2px azure;
   border-radius: 15px;
   padding: 10px;
 }
-#afterThought{
+
+#afterThought {
   margin-left: 40%;
 }
+
 /*******************************************************************/
 
-.techParagraph{
+.techParagraph {
   color: azure;
   text-align: center;
 }
-li{
+
+li {
   display: block;
   font-size: 20px;
   color: azure;
 }
+
 /* /////////////////////////////////////////////////////////// */
-.endParagraph{
+
+.endParagraph {
   margin: 3px;
   border-radius: 4px;
   border: solid azure 1px;
@@ -61,20 +87,21 @@ li{
   align-content: center;
 }
 
+/*size and shaping of portfolio pics and overlay text */
 
-  /*size and shaping of portfolio pics and overlay text */
-  .portPics{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-  .pic {
+.portPics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.pic {
   object-fit: cover;
   width: 95vw;
   height: 20vh;
-  }
+}
 
 .overlay {
   position: absolute;
@@ -93,7 +120,7 @@ li{
 .container:hover .overlay {
   opacity: 1;
   width: 100%;
-} 
+}
 
 .text {
   color: antiquewhite;
@@ -106,24 +133,22 @@ li{
   transform: translate(-50%, -50%);
   text-align: center;
   white-space: nowrap;
-
 }
 
-.description{
-    color: azure;
-    font-size: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    white-space: nowrap;
-
+.description {
+  color: azure;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  white-space: nowrap;
 }
 
-.tools{
+.tools {
   color: azure;
   font-size: 15px;
   position: absolute;
@@ -134,12 +159,9 @@ li{
   transform: translate(-50%, -50%);
   text-align: center;
   white-space: nowrap;
-
 }
 
-
-.tools, .text, .description{
-
+.tools, .text, .description {
   background-color: rgb(11, 60, 77);
   border: none;
   color: azure;
@@ -148,27 +170,24 @@ li{
   margin: 4px 2px;
   transition: 0.3s;
   text-decoration: none;
-
 }
+
 .tools:hover, .text:hover, .description:hover {
   opacity: 1;
   color: black;
   text-decoration: none;
 }
 
-
-
 /* Parallax effect below */
+
 .parallax {
-    /* The image used */
-    background-image: url("../Images/city.jpg");
-  
-    /* Set a specific height */
-    min-height: 500px; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  /* The image used */
+  background-image: url("../Images/city.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
