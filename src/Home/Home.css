@@ -24,7 +24,8 @@
     width: 30vw;
     height: 60vh;
   }
-} 
+}
+
 @media (max-width:960px) {
   #bioPic {
     height: 90vh;
@@ -32,7 +33,6 @@
   }
 }
 
-//nothing with screen size bigger than 960px
 #titleBorder {
   border-top: 2px solid azure;
 }
