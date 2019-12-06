@@ -10,35 +10,35 @@ class SkillOrbit extends Component {
 
                     {/* each individual planet */}
                     <div className="system-css">
-                        <img className="planet" src={require("../../Images/css.png")} />
+                        <img alt="" className="planet" src={require("../../Images/css.png")} />
                     </div>
 
                     <div className="system-html">
-                        <img className="planet" src={require("../../Images/html5.png")} />
+                        <img alt="" className="planet" src={require("../../Images/html5.png")} />
                     </div>
 
                     <div className="system-react">
-                        <img className="reactplanet" src={require("../../Images/react.svg")} />
+                        <img alt="" className="reactplanet" src={require("../../Images/react.svg")} />
                     </div>
 
                     <div className="system-node">
-                        <img className="squareplanet" src={require("../../Images/download.jpg")} />
+                        <img alt="" className="squareplanet" src={require("../../Images/download.jpg")} />
                     </div>
 
                     <div className="system-js">
-                        <img className="squareplanet" src={require("../../Images/javascript.png")} />
+                        <img alt="" className="squareplanet" src={require("../../Images/javascript.png")} />
                     </div>
 
                     <div className="system-mongo">
-                        <img className="squareplanet" src={require("../../Images/mongo.png")} />
+                        <img alt="" className="squareplanet" src={require("../../Images/mongo.png")} />
                     </div>
 
                     <div className="system-sql">
-                        <img className="reactplanet" src={require("../../Images/mysql.png")} />
+                        <img alt="" className="reactplanet" src={require("../../Images/mysql.png")} />
                     </div>
                     
                     <div className="system-angular">
-                        <img className="reactplanet" src={require("../../Images/angular.png")} />
+                        <img alt="" className="reactplanet" src={require("../../Images/angular.png")} />
                     </div>
 
                     {/* the sun the rotate around */}

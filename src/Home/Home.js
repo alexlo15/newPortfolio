@@ -10,7 +10,7 @@ class Home extends Component {
     render() {
         return (
             <div className="body">
-                <Navbar />
+                <Navbar/>
 
 
                 <div className="row">
@@ -37,7 +37,7 @@ class Home extends Component {
                         <div className="row">
                             <div className="col-12 col-sm-12 col-lg-2"></div>
                             <div className="col-12 col-sm-12 col-lg-8">
-                                <div id="randomFactArea">
+                                <div id="squigglyborder">
                                     <div id="DYK"><h3>Did you know?</h3></div>
                                     <br></br>
                                     <div id="fact"><RandomFact /></div>
@@ -98,10 +98,10 @@ class Home extends Component {
                 {/* ///////////////////////////////////////// */}
                 <div className="row">
                     <div className="col-12 col-sm-12 col-lg-2"></div>
-                    <div className="col-12 col-sm-12 col-lg-8 bioParagraph"><h2>Sites and Applications:</h2></div>
+                    <div className="col-12 col-sm-12 col-lg-8 bioParagraph" id="squigglyborder"><h2>Sites and Applications:</h2></div>
                     <div className="col-12 col-sm-12 col-lg-2"></div>
                 </div>
-
+                <br></br>
                 {/* start of portfolio  */}
                 <div className="row">
                     <div className="col-12 col-sm-12 col-lg-12 container">
