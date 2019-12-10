@@ -18,7 +18,7 @@ const images = [
 
   },
   {
-    url: require("./linkedin.jpg"),
+    url: require("./drive.png"),
     title: 'Resume',
     width: '20%',
     address: "https://docs.google.com/document/d/1eJDtlLm0e73J-ZIg6oOMsPVtNewKBPIrFBTJO02Wbkg/edit?usp=sharing",
@@ -32,7 +32,7 @@ const images = [
 
   },
   {
-    url: require("./numPic.png"),
+    url: require("./portfolio.png"),
     title: 'Old Portfolio',
     width: '20%',
     address: 'https://alexlo15.github.io',
@@ -79,7 +79,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    color: theme.palette.common.black,
+    color: theme.palette.grey,
 
   },
   imageSrc: {
