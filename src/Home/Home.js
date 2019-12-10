@@ -49,7 +49,6 @@ class Home extends Component {
                             <div id="fact"><RandomFact /></div>
                             <br></br>
                         </div>
-                        <br></br>
                         <div id="squigglyborder">
                             <div id="DYK"><h3>Heard this one?</h3></div>
                             <br></br>
