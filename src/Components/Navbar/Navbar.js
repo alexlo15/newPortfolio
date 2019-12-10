@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import "./Navbar.css";
+import SocialButts from "./Social butts/SocialButtons";
 class NavBar extends Component {
 
     render() {
         return (
 
             <>
-                    <nav className="navbar sticky-top navbar-dark bg-dark">
-                        <div className="row">
+                <nav className="navbar sticky-top Nav">
+                    {/* <div className="row">
                             <div className="col-4">
                                 <a href="https://github.com/alexlo15" target="_blank"><img alt="" className="navbutts" src={require("../../Images/Pictures/github.jpg")} /></a>
                             </div>
@@ -17,8 +18,10 @@ class NavBar extends Component {
                             <div className="col-4">
                                 <a href="https://alexlo15.github.io" target="_blank"><img alt="" className="navbutts" src={require("../../Images/portfolio.png")} /></a>
                             </div>
-                        </div>
-                    </nav>
+                        </div> */}
+
+                        <SocialButts />
+                </nav>
             </>
         );
     };
@@ -26,3 +29,4 @@ class NavBar extends Component {
 };
 
 export default NavBar;
+

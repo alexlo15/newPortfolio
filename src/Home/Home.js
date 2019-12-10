@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import "./Home.css";
-import Navbar from "../Components/Navbar/Navbar";
+import Nav from "../Components/Navbar/Navbar";
 import RandomFact from "../Components/RandomFact";
 import SkillOrbit from "../Components/SkillsOrbit/Orbit";
 import Ticker from "../Components/Ticker/Ticker";
 import RandomJoke from '../Components/RandomJoke';
+import PollComponent from '../Components/Poll';
 
 class Home extends Component {
 
     render() {
         return (
             <div className="body">
-                <Navbar />
+                <Nav />
                 <div className="row"><br></br><br></br></div>
                 <div className="row">
                     <div className="col=12 col-sm-12 col-lg-4">
@@ -37,7 +38,7 @@ class Home extends Component {
                     </div>
                     <div className="col=12 col-sm-12 col-lg-4 picContainer">
                         <br></br>
-                        <img id="bioPic" alt="my ugly mug" src={require("../Images/me.jpg")} />
+                        <img id="bioPic" alt="my ugly mug" src={require("../Images/Mugshot.png")} />
                         <br></br>
                     </div>
                     <div className="col=12 col-sm-12 col-lg-3">
@@ -47,20 +48,28 @@ class Home extends Component {
                             <br></br>
                             <div id="fact"><RandomFact /></div>
                             <br></br>
-                            <h3 id="afterThought">...I certainly didn't!</h3>
                         </div>
                         <br></br>
                         <div id="squigglyborder">
-                            <div id="DYK"><h3>Heard this one??</h3></div>
+                            <div id="DYK"><h3>Heard this one?</h3></div>
                             <br></br>
                             <div id="joke"><RandomJoke /></div>
                             <br></br>
-                            <h3 id="afterThought">...LOL!</h3>
+                        </div>
+                        <div id="squigglyborder">
+                            <div id="DYK"><h3></h3></div>
+                            <br></br>
+                            <div><PollComponent /></div>
+                            <br></br>
                         </div>
                     </div>
                     <div className="col-lg-1"></div>
                 </div>
-                <Ticker />
+                <br></br>
+                <h4>Thank you for visiting my Portfolio page! I'm Alex, a Full Stack Web Developer, looking to take my career to the next level.</h4>
+                <h4>I enjoy making crisp clean web pages while challenging myself to balance simplicity and creativity. Scroll down to see my work and skills.</h4>               
+                <h4>Feel free to reach out to me if you have any questions or inquiries at one of the links on top or at the number below!</h4>
+                 <Ticker />
                 {/* ///////////////////////////////////////// */}
 
                 <div className="parallax"></div>
@@ -75,20 +84,26 @@ class Home extends Component {
                     <div className="col-12 col-sm-12 col-lg-4"></div>
                 </div>
                 <br></br><br></br>
-                <div className="row">
-                    <div className="col-12 col-sm-12 col-lg-6 techParagraph">
-                        <h3>&nbsp; Front-end Technologies</h3>
-                        <li><strong>React.JS</strong></li>
-                        <li><strong>Angular.JS</strong></li>
-                        <li><strong>HTML5/CSS3</strong></li>
-                        <li><strong>JavaScript</strong></li>
-                    </div>
-                    <div className="col-12 col-sm-12 col-lg-6 techParagraph">
-                        <h3>&nbsp; Back-end Technologies</h3>
-                        <li><strong>Node.JS</strong></li>
-                        <li><strong>Express</strong></li>
-                        <li><strong>MongoDB</strong></li>
-                        <li><strong>MySQL</strong></li>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12 col-sm-12 col-lg-5 techParagraph1">
+                            <h3>&nbsp; Front-end Technologies</h3>
+                            <li><strong>React.JS</strong></li>
+                            <li><strong>Angular.JS</strong></li>
+                            <li><strong>HTML5/CSS3</strong></li>
+                            <li><strong>JavaScript</strong></li>
+                            <br></br>
+                        </div>
+                        <div className="col-lg-2">
+                        </div>
+                        <div className="col-12 col-sm-12 col-lg-5 techParagraph2">
+                            <h3>&nbsp; Back-end Technologies</h3>
+                            <li><strong>Node.JS</strong></li>
+                            <li><strong>Express</strong></li>
+                            <li><strong>MongoDB</strong></li>
+                            <li><strong>MySQL</strong></li>
+                            <br></br>
+                        </div>
                     </div>
                 </div>
                 <br></br>
@@ -100,6 +115,7 @@ class Home extends Component {
                 <div className="parallax"></div>
 
                 {/* ///////////////////////////////////////// */}
+                <br></br>
                 <div className="row">
                     <div className="col-12 col-sm-12 col-lg-2"></div>
                     <div className="col-12 col-sm-12 col-lg-8 bioParagraph" id="squigglyborder"><h2>Sites and Applications:</h2></div>
@@ -266,9 +282,8 @@ class Home extends Component {
 
                 <div className="row">
                     <div className="col-lg-4"></div>
-                    <div className="col-12 col-sm-12 col-lg-4 endParagraph">
-                        Thanks for making it to the end!
-                        Feel free to reach me at any of my links in the NavBar or below.
+                    <div className="col-12 col-sm-12 col-lg-4">
+                        2019 Alexander Lo
                     </div>
                 </div>
 

@@ -1,8 +1,8 @@
-.navbutts{
-    float: right;
-    width: 5vw;
-    height: 5vh;
-    object-fit: cover;
-    overflow: hidden;
-}
+.Nav{
+    border-bottom: rgba(255, 255, 255, 0.342) solid 4px;
+    }
 
+.Nav:hover{
+        border-bottom: rgb(255, 255, 255) solid 4px;
+        }
+            

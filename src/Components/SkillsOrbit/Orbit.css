@@ -1,11 +1,14 @@
 .skillPlanetMain {
     position: relative;
     z-index: 2;
-    background-color: azure;
+    background-color: rgba(44, 88, 88, 0.691);
     width: 10em; height: 10em;
-    box-shadow: 0 0 1em darkslategray, inset 0 0 7em darkslategray;
+    box-shadow: 0 0 1em rgb(14, 19, 19), inset 0 0 7em rgb(219, 243, 4);
     text-align: center;
     border-radius: 100px;
+    padding: 50px;
+    color: black;
+    animation: sun-orbit 8s ease-in-out infinite;
 }
 
 /* .css {
@@ -102,4 +105,10 @@
       0% { transform: translateX(0); }
      50% { transform: translateX(30em); z-index: 3; }
     100% { transform: translateX(0); z-index: 1; }
+}
+
+@keyframes sun-orbit {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(1em); }
+ 100% { transform: translateY(0); }
 }

@@ -51,6 +51,10 @@ h2 {
   text-align: center;
 }
 
+h4 {
+  text-align: center;
+}
+
 #squigglyborder {
   color: azure;
   border-top: solid 2px azure;
@@ -59,17 +63,24 @@ h2 {
   padding: 10px;
 }
 
-#afterThought {
-  margin-left: 40%;
-}
 
 /*******************************************************************/
 
-.techParagraph {
+.techParagraph1 {
   color: azure;
   text-align: center;
+  border-bottom: azure solid 3px;
+  border-right:  azure solid 3px;
+  box-shadow: rgba(0, 0, 0, 0.465) 7px 9px;
 }
+.techParagraph2 {
+  color: azure;
+  text-align: center;
+  border-bottom: azure solid 3px;
+  border-left:  azure solid 3px;
+  box-shadow: rgba(0, 0, 0, 0.465) -7px 9px;
 
+}
 li {
   display: block;
   font-size: 20px;
